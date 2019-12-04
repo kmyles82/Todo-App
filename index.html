@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>To-do List</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">To-Do App</h1>
+                <h2 class="header__subtitle">What do you need to do</h2>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="actions__container">
+                <input class="input" id="search-text" type="text" placeholder="Filter todos">
+                <label class="checkbox">
+                    <input  type="checkbox" id="hide-completed"> Hide completed
+                </label>
+            </div>
+        </div>
+        <div class="container">
+            <div id="todos"></div>
+            <form id="new-todo">
+                <input class="input" type="text" placeholder="Something to do" name="text">
+                <button class="button">Add Todo</button>
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+        <script src="scripts/uuidv4.js"></script>
+        <script src="scripts/todos-functions.js"></script>
+        <script src="scripts/todo-app.js"></script>
+    </body>
+</html>
